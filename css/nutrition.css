@@ -1,0 +1,416 @@
+
+.nutrition-hero {
+    min-height: 350px;
+    width: 100%;
+    padding: 40px 5%;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../images/Hero Images/hero-nutrition.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nutrition-hero-content {
+    max-width: 450px;
+}
+
+.nutrition-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.nutrition-hero h1 span {
+    color: var(--accent-text);
+}
+
+.nutrition-hero p {
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.nutrition-btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--btn-radius);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nutrition-btn:hover {
+    background-color: var(--accent-text);
+}
+
+.nutrition-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 20px 7% 0;
+    background-color: var(--bg-page);
+}
+
+.nutrition-tabs a {
+    flex: 1;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 14px 10px;
+    border-radius: 10px 10px 0 0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.nutrition-tabs a:focus {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+.nutrition-tabs a:active {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+.nutrition-tabs a:hover {
+    background-color: var(--accent-hover);
+    color: var(--text);
+}
+
+
+.nutrition-tabs a:hover {
+    background-color: var(--accent-hover);
+    color: var(--text);
+}
+
+.nutrition-tabs:has(~ .nutrition-content #supplements:target)
+a[href="#supplements"],
+.nutrition-tabs:has(~ .nutrition-content #bmi:target)
+a[href="#bmi"],
+.nutrition-tabs:has(~ .nutrition-content #calories:target)
+a[href="#calories"] {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+
+.nutrition-content {
+    background-color: var(--bg-page);
+    padding: 0 7% 50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.nutrition-card {
+    background-color: var(--bg-card);
+    padding: 28px;
+    border-radius: var(--card-radius);
+    border: 1px solid var(--divider-color);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+    scroll-margin-top: 100px;
+    transition: 0.3s;
+}
+
+.nutrition-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-card:target {
+    border: 2px solid var(--accent);
+}
+
+.nutrition-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nutrition-card-heading h2 {
+    font-size: 24px;
+    color: var(--primary);
+    margin: 0;
+}
+
+.section-description {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.view-all-btn {
+    color: var(--accent-text);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
+}
+
+.supplement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.supplement-item {
+    background-color: var(--bg-subtle);
+    border: 1px solid var(--divider-color);
+    border-radius: var(--card-radius);
+    padding: 20px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.supplement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.supplement-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.supplement-item h3 {
+    font-size: 17px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.supplement-item p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.calculator-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.calculator-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator-inputs label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.calculator-inputs input,
+.calculator-inputs select {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--white);
+    color: var(--text);
+    border: 1px solid var(--border-color);
+    border-radius: var(--btn-radius);
+    font-size: 14px;
+}
+
+.calculator-inputs input::placeholder {
+    color: var(--placeholder-text);
+}
+
+.calculator-inputs input:focus,
+.calculator-inputs select:focus {
+    outline: 2px solid var(--border-focus-color);
+}
+
+.calculator-inputs button {
+    margin-top: 12px;
+    align-self: flex-start;
+}
+
+.calculator-results {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--bg-subtle);
+    border-radius: var(--card-radius);
+}
+
+.result-item {
+    background-color: var(--bg-card);
+    border-radius: var(--card-radius);
+    padding: 22px;
+    text-align: center;
+    flex: 1;
+}
+
+.result-item h3 {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.calculator-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 16px;
+}
+
+#nutrition-main-view[hidden],
+#all-supplements-view[hidden] {
+    display: none;
+}
+
+.all-supplements-heading {
+    background-color: var(--bg-page);
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.all-supplements-heading h1 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.all-supplements-heading p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.back-to-nutrition {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--btn-radius);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-to-nutrition:hover {
+    background-color: var(--accent-text);
+}
+
+.all-supplements-container {
+    background-color: var(--bg-page);
+    padding: 20px 7% 60px;
+}
+
+.all-supplements-container .supplement-item {
+    padding: 30px 20px;
+}
+
+.all-supplements-container .supplement-image {
+    height: 180px;
+}
+
+.supplement-notice {
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+
+    .nutrition-hero {
+        min-height: 340px;
+        padding: 40px 6%;
+    }
+
+    .nutrition-hero h1 {
+        font-size: 34px;
+    }
+
+    .nutrition-tabs {
+        flex-wrap: wrap;
+    }
+
+    .nutrition-content {
+        padding: 20px 4% 40px;
+    }
+
+    .supplement-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calculator-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .all-supplements-container {
+        padding: 20px 4% 40px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .nutrition-hero h1 {
+        font-size: 28px;
+    }
+
+    .nutrition-tabs {
+        flex-direction: row;
+        gap: 3px;
+        padding: 15px 4% 0;
+    }
+
+    .nutrition-tabs a {
+        width: auto;
+        padding: 12px 5px;
+        font-size: 11px;
+    }
+
+    .nutrition-card {
+        padding: 18px;
+    }
+
+    .nutrition-card-heading h2 {
+        font-size: 20px;
+    }
+
+    .supplement-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-inputs button {
+        width: 100%;
+    }
+
+    .all-supplements-heading h1 {
+        font-size: 28px;
+    }
+
+    .all-supplements-container {
+        padding: 20px;
+    }
+}

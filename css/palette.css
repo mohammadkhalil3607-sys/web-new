@@ -1,0 +1,50 @@
+/* Coaching Hub: warm coastal palette. Gold is decoration, dark gold is text. */
+:root {
+  /* Typography: install/load these fonts separately; fallbacks remain usable. */
+  --font-heading: "Montserrat", Arial, sans-serif;
+  --font-body: "Roboto", Arial, sans-serif;
+  /* Surfaces */
+  --bg-page: #F7F1E8;
+  --bg-card: #FFFBF5;
+  --bg-nav: #FBF2E7;
+  --bg-subtle: #EAE3D7;
+  --bg-footer: #263C38;
+  /* Brand */
+  --primary: #263C38;
+  --secondary: #E9D8C7;
+  --accent: #C49A5A;
+  --accent-light: #D8B77E;
+  --accent-text: #76521F;
+  --accent-hover: #B68A48;
+  /* Text */
+  --white: #FFFFFF;
+  --text: #26302F;
+  --text-muted: #625F57;
+  --text-on-dark: #FFFBF5;
+  --placeholder-text: #69645B;
+  /* Feedback: pair with words/icons, never color alone. */
+  --error: #A52834;
+  --error-bg: #FDEBEC;
+  --success: #21643F;
+  --success-bg: #E8F3EA;
+  --star-gold: #896018;
+  /* Components */
+  --table-header: #40515C;
+  --cta-gradient-card: linear-gradient(110deg, #263C38, #0F3A48);
+  --fill-me-text: #FFD98A; /* On dark surfaces only. */
+  --border-color: #81796D;
+  --divider-color: rgba(73, 76, 75, 0.25);
+  --border-focus-color: #76521F;
+  --focus-ring: 0 0 0 3px #D8B77E;
+  /* Layout */
+  --content-width: 1200px;
+  --side-padding: max(20px, calc((100% - var(--content-width)) / 2));
+  --card-radius: 12px;
+  --btn-radius: 8px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+}

@@ -1,0 +1,111 @@
+/* this file resembles bootstrap in our way */
+.sect {
+	background-color: var(--bg-page);
+	padding: 40px var(--side-padding);
+
+	border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--accent), var(--accent-light), transparent);
+    border-image-slice: 1;
+}
+
+.no-bullets {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.clean-ul a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+.btn {
+	text-decoration: none;
+	padding: .8rem 2rem;
+	border-radius: var(--btn-radius);
+	transition: .2s ease;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: var(--primary);
+	color: var(--white);
+	border: 2px solid var(--primary);
+}
+
+.btn-secondary {
+	background-color: var(--secondary);
+	color: var(--text-muted);
+	border: 2px solid var(--primary);
+}
+
+.btn-form {
+	margin-top: 10px;
+	border: none;
+	width: 100%;
+
+	background-color: var(--accent);
+	font-weight: bold;
+	color: var(--primary);
+
+	box-shadow: 0 0 2px var(--accent-light);
+
+	cursor: pointer;
+	transition: .5s ease;
+}
+
+.btn-extended {
+	width: 100%;
+}
+
+.btn-form:hover {
+	background-color: var(--accent-light);
+}
+
+.btn-primary:hover {
+	background-color: var(--secondary);
+	color: var(--text-muted);
+}
+
+.btn-secondary:hover {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+	gap: 40px;
+}
+
+.card {
+	background-image: linear-gradient(to bottom right, var(--bg-card), var(--bg-card), var(--secondary));
+	border-radius: var(--card-radius);
+	box-shadow: 0 0 15px #76521F80;
+	padding: 30px;
+	text-align: center;
+	transition: .3s ease;
+}
+
+.card:hover {
+	transform: scale(1.02);
+}
+
+.card img {
+	height: 60px;
+}
+
+.card h4 {
+	font-family: var(--font-heading);
+	font-size: 1.5rem;
+}
+
+.card p {
+	color: var(--text-muted);
+}
+
+.tick-ul li::before {
+	content: "✔";
+	margin-right: 5px;
+	color: var(--accent);
+}

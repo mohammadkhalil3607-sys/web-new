@@ -1,0 +1,95 @@
+/* HERO SECTION */
+
+.hero-sect {
+	background-image: linear-gradient(to left, transparent 30%, var(--bg-nav)), url("../images/Hero Images/hero-coaches.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.hero-sect .hero-content {
+	max-width: 500px;
+}
+
+.hero-content h1 {
+	font-family: var(--font-heading);
+	font-size: 4rem;
+}
+
+.hero-content h1 span {
+	color: var(--accent);
+}
+
+.hero-content p {
+	margin: 20px 0;
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+.hero-content .hero-buttons {
+	display: flex;
+	gap: var(--space-3);
+}
+
+/* COACHES SECTION */
+.coach-list {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+}
+
+.coach-list .card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coach-list .card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--btn-radius);
+}
+
+.coach-list .card button {
+    font-size: 1rem;
+}
+
+@media (max-width: 1000px) {
+	.hero-sect {
+		background-image: linear-gradient(to top left, transparent, transparent, var(--bg-nav)), url("../images/Hero Images/hero-coaches.png");
+		background-position: 75% center;
+	}
+
+	.hero-content h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero-content p {
+		font-size: 1.1rem;
+		line-height: 1.6rem;
+	}
+
+	.hero-sect .hero-content {
+		max-width: 250px;
+	}
+
+	.hero-content .hero-buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 740px) {
+    .hero-sect {
+        min-height: 450px;
+        background-image: linear-gradient(to bottom, transparent, var(--bg-nav)), url("../images/Hero Images/hero-coaches.png");
+        justify-content: center;
+    }
+}
