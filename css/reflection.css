@@ -6,50 +6,62 @@ body {
 }
 
 
-/* Hero Banner */
+/* Hero Section */
 .reflection-hero {
+    background-image: linear-gradient(to left, transparent, transparent, transparent, var(--bg-nav)), url("../images/Hero Images/hero-reflection.png");
+    min-height: 600px;
     width: 100%;
-    background-image: url('../images/Hero Images/hero-reflection.png');
-    background-size: cover;
-    background-position: center right; 
-    background-repeat: no-repeat;
-}
+    padding: 40px var(--side-padding);
 
-/* Hero Dark Overlay */
-.hero-overlay {
     display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: clamp(220px, 17vw, 350px);
-    background: linear-gradient(to right, rgba(37, 32, 47, 0.75),
-     rgba(37, 32, 47, 0.25),transparent );
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--accent)) 1;
+    background-clip: padding-box;
 }
 
-/* Hero Text Container */
-.hero-content {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 32px 24px;
-    color: #FFFFFF;
+.reflection-hero-content {
+    max-width: 450px;
 }
 
-/* Hero Title */
-.hero-content h1 {
-    font-size: clamp(1.8rem, 3.5vw, 3rem);
-    margin-bottom: 12px;
-    color: #FFFFFF;
+.reflection-hero h1 {
+    font-family: var(--font-heading);
+	font-size: 4rem;
 }
 
-/* Hero Description */
-.hero-content p {
+.reflection-hero h1 span {
+    color: var(--accent);
+}
+
+.reflection-hero p {
+    margin: 20px 0;
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+.reflection-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: var(--btn-radius);
+    transition: 0.2s ease;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
     font-size: 1rem;
-    max-width: 560px;
-    line-height: 1.6;
-    margin: 0;
-    color: #F4F0E8;
 }
 
+.reflection-btn:hover {
+    background-color: var(--secondary);
+    color: var(--text-muted);
+}
 /* Main Container */
 .reflection-container {
     max-width: 1140px;
@@ -57,7 +69,7 @@ body {
     padding: 0 24px;
 }
 
-/* Summary Grid */
+
 /* Summary Grid */
 .summary-grid {
     display: grid;
@@ -77,6 +89,13 @@ body {
 .info-card {
     padding: 24px;
 }
+.info-card:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
 
 /* Horizontal Divider */
 .info-card:nth-child(-n+2) {
@@ -91,17 +110,16 @@ body {
 /* Card Headings */
 .info-card h2 {
     font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 16px;
+margin : 0;
     color: #25202F;
 }
 
 /* Card Description */
 .info-card p {
-    font-size: 0.95rem;
+   font-size: 0.95rem;
     line-height: 1.7;
-    color: #4A4453;
-    margin-bottom: 20px;
+    color: var(--text-muted);
+    margin: 0;
 }
 
 
@@ -109,23 +127,23 @@ body {
 /* Gold Button */
 .btn-gold {
     display: inline-block;
-
-    background-color: #A87532;
-    color: #FFFFFF;
-
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-
-    padding: 12px 24px;
-    border-radius: 30px;
-
-    transition: background-color 0.2s ease;
+    padding: 0.8rem 2rem;
+    border-radius: var(--btn-radius);
+    transition: 0.2s ease;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
-/* Gold Button Hover */
+/* Reflection Button Hover */
 .btn-gold:hover {
-    background-color: #875B25;
+    background-color: var(--secondary);
+    color: var(--text-muted);
 }
 
 .btn-outline {
@@ -156,27 +174,24 @@ body {
 
 /* Individual AI Tool Card */
 .tool-badge {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background-color: #FFFFFF;
-    border: 1px solid #E5DBC5;
-    border-radius: 10px;
-
+    border-radius: var(--card-radius);
     padding: 18px 10px;
     gap: 10px;
-
+    background-image: linear-gradient(to bottom right, var(--bg-card), var(--bg-card), var(--secondary));
+    box-shadow: 0 0 5px #76521F80;
     text-align: center;
-
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 /* AI Tool Card Hover */
 .tool-badge:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(37, 32, 47, 0.08);
+    transform: translateY(-100px);
+    box-shadow: 0 0 12px #76521F60;
 }
 
 /* AI Tool Logo */
@@ -219,45 +234,13 @@ body {
     text-decoration: underline;
 }
 /* Check Lists */
-.check-list {
+/* .check-list {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Checklist Items */
-.check-list li {
-    position: relative;
-
-    padding-left: 28px;
-    margin-bottom: 12px;
-
-    color: #4A4453;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-/* Remove Extra Space From Last Item */
-.check-list li:last-child {
-    margin-bottom: 0;
-}
-
-/* Checkmark Icon */
-.check-list li::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 4px;
-
-    width: 18px;
-    height: 18px;
-
-    background-image: url('../images/Icons/check.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 /* Full Reflection Report */
 .reading-card {

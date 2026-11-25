@@ -1,60 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Subtopic 3 | Coaching Hub</title>
-		<link rel="stylesheet" href="css/palette.css">
-		<link rel="stylesheet" href="css/groupstrap.css">
-		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" href="css/home.css">
-	</head>
-	<body>
-		<!-- navigation bar -->
-		<div class="navbar">
-			<img src="images/Brand Marks/logo.svg" alt="Coaching Hub">
-			<input type="checkbox" name="menu-toggle" id="menu-toggle" class="menu-toggle">
-			<label for="menu-toggle" class="menu-button" aria-label="Toggle menu">☰</label>
-			<ul class="no-bullets clean-ul">
-				<li><a href="home.html" >Home</a></li>
-				<li><a href="subtopic1.html">Hire a Coach</a></li>
-				<li><a href="subtopic2.html">Nutrition</a></li>
-				<li><a href="subtopic3.html" focus>Training</a></li>
-				<li><a href="planning-design.html">Planning</a></li>
-				<li><a href="reflection-ai-report.html">Reflection</a></li>
-				<li><a href="overview.html">Overview</a></li>
-			</ul>
-		</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Training & Fitness Guides | Coaching Hub</title>
 
-		<!-- hero section -->
+        <link rel="icon" href="images/Brand Marks/favicon.svg">
 
-		<!-- Footer -->
-        <div class="footer-bg">
-            <div class="footer">
-                <div class="footer-inner">
-
-        <!-- Left: brand -->
-        <div class="footer-brand">
-            <div class="site-name">
-                <img src="images/Brand Marks/logo.svg" alt="logo" />
-            </div>
-            <p>Train. Eat. Rest. Succeed.</p>
-        </div>
-
-        <!--  quick links + copyright -->
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
+        <link rel="stylesheet" href="css/palette.css">
+        <link rel="stylesheet" href="css/groupstrap.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/training-hub.css">
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <div class="navbar">
+            <img src="images/Brand Marks/logo.svg" alt="Coaching Hub">
+            <input type="checkbox" name="menu-toggle" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button" aria-label="Toggle menu">☰</label>
+            <ul class="no-bullets clean-ul">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="subtopic1.html">Hire a Coach</a></li>
                 <li><a href="subtopic2.html">Nutrition</a></li>
-                <li><a href="subtopic3.html">Training</a></li>
+                <li><a href="subtopic3.html" focus>Training</a></li>
                 <li><a href="planning-design.html">Planning</a></li>
                 <li><a href="reflection-ai-report.html">Reflection</a></li>
                 <li><a href="overview.html">Overview</a></li>
             </ul>
-            <p class="copyright">&copy; 2026 Coaching Hub. All rights reserved.</p>
         </div>
+
+        <!-- hero section -->
+        <div class="sect hero-sect">
+            <div class="hero-content">
+                <h1>Train Smarter,<br><span>Live Stronger</span></h1>
+                <p>Explore workout guides, fitness tips and expert advice to help you build strength, improve endurance and stay consistent.</p>
+                <a href="#" class="btn btn-primary">Explore Guides</a>
+            </div>
+        </div>
+
+        <!-- Training categories -->
+        <div class="sect">
+            <div class="training-cards">
+                <div class="card">
+                    <img src="images/training/training/1.png" alt="Dumbbell Icon">
+                    <h4>Strength Training</h4>
+                    <p>Build muscle & power</p>
+                </div>
+                <div class="card">
+                    <img src="images/training/training/2.png" alt="Scale Icon">
+                    <h4>Weight Loss</h4>
+                    <p>Burn fat & feel lighter</p>
+                </div>
+                <div class="card">
+                    <img src="images/training/training/3.png" alt="Heart Icon">
+                    <h4>Endurance</h4>
+                    <p>Improve stamina over time</p>
+                </div>
+                <div class="card">
+                    <img src="images/training/training/4.png" alt="Stretching Icon">
+                    <h4>Mobility</h4>
+                    <p>Move better</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured fitness guides -->
+        <div class="sect">
+            <div class="section-heading">
+                <h2>Featured Guides</h2>
+            </div>
+            <div class="cards">
+                <div class="training-card">
+                    <img src="images/training/training/full-body.png" alt="Full Body Workout">
+                    <div class="guide-content">
+                        <h3>Full Body Workout</h3>
+                        <p>A balanced plan for all fitness levels</p>
+                        <details>
+                            <summary class="btn btn-primary">Read More</summary>
+                            <p>This guide includes exercises that work different muscles in your body. It helps you build strength, improve your fitness, and stay active. It is suitable for all fitness levels.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="training-card">
+                    <img src="images/training/training/HIIT.png" alt="HIIT Workouts">
+                    <div class="guide-content">
+                        <h3>HIIT Workouts</h3>
+                        <p>Burn more calories in less time</p>
+                        <details>
+                            <summary class="btn btn-primary">Read More</summary>
+                            <p>This guide includes short periods of intense exercise followed by rest. It helps you burn calories, improve your endurance, and stay fit in less time.</p>
+                        </details>
+                    </div>
+                </div>
+                <article class="training-card">
+                    <img src="images/training/training/mobility.png" alt="Mobility Routine image">
+                    <div class="guide-content">
+                        <h3>Mobility Routine</h3>
+                        <p>Move freely and prevent injury</p>
+                        <details>
+                            <summary class="btn btn-primary">Read More</summary>
+                            <p>This guide includes simple stretching and movement exercises. It helps you improve your flexibility, reduce muscle stiffness, and lower the risk of injury.</p>
+                        </details>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Coach call to action -->
+        <div class="sect">
+            <div class="bottom-banner">
+                <h2>Need a personalised plan?</h2>
+                <p>Get a custom training plan from our expert coaches.</p>
+                <a href="subtopic1.html" class="btn btn-primary">Find a Coach</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-bg">
+            <div class="footer">
+                <div class="footer-inner">
+
+                    <!-- Left: brand -->
+                    <div class="footer-brand">
+                        <div class="site-name">
+                            <img src="images/Brand Marks/logo-footer.svg" alt="logo">
+                        </div>
+                        <p>Train. Eat. Rest. Succeed.</p>
+                    </div>
+
+                    <!--  quick links + copyright -->
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="hire-a-coach.html">Hire a Coach</a></li>
+                            <li><a href="nutrition-hub.html">Nutrition</a></li>
+                            <li><a href="training-hub.html">Training</a></li>
+                            <li><a href="planning-design.html">Planning</a></li>
+                            <li><a href="reflection-ai-report.html">Reflection</a></li>
+                            <li><a href="overview.html">Overview</a></li>
+                        </ul>
+                        <p class="copyright">&copy; 2026 Coaching Hub. All rights reserved.</p>
+                    </div>
 
                     <contact -->
                     <div class="footer-contact">
@@ -66,12 +153,12 @@
                             </li>
                             <li>
                                 <img src="images/Icons/phone.svg" alt="phone">
-                                <a href="tel:+97337006846">+973 37006846</a>
+                                <a href="tel:+97312345678">+973 37006846</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-	</body>
+    </body>
 </html>

@@ -1,53 +1,61 @@
 
 .nutrition-hero {
-    min-height: 350px;
+    background-image: linear-gradient(to left, transparent, transparent, transparent, var(--bg-nav)), url("../images/Hero Images/hero-nutrition.png");
+    min-height: 600px;
     width: 100%;
-    padding: 40px 5%;
+    padding: 40px var(--side-padding);
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
-    background-image: url("../images/Hero Images/hero-nutrition.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--accent)) 1;
+    background-clip: padding-box;
 }
+
 
 .nutrition-hero-content {
     max-width: 450px;
 }
 
 .nutrition-hero h1 {
-    font-family: var(--font-heading);
-    font-size: 40px;
-    margin-bottom: 15px;
+font-family: var(--font-heading);
+	font-size: 4rem;
 }
 
 .nutrition-hero h1 span {
-    color: var(--accent-text);
+    color: var(--accent);
 }
 
 .nutrition-hero p {
-    font-size: 15px;
-    color: var(--text);
-    line-height: 1.6;
-    margin-bottom: 20px;
+    margin: 20px 0;
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 2rem;
 }
 
 .nutrition-btn {
+    gap: var(--space-3);
     display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: var(--btn-radius);
+    transition: 0.2s ease;
+    cursor: pointer;
     background-color: var(--primary);
     color: var(--white);
-    padding: 12px 24px;
-    border: none;
-    border-radius: var(--btn-radius);
-    text-decoration: none;
-    font-size: 14px;
-    cursor: pointer;
+    border: 2px solid var(--primary);
+    font-size: 1rem;
 }
 
 .nutrition-btn:hover {
-    background-color: var(--accent-text);
+    background-color: var(--secondary);
+    color: var(--text-muted);
 }
 
 .nutrition-tabs {
@@ -79,19 +87,15 @@
 }
 
 .nutrition-tabs a:active {
-    background-color: var(--accent);
-    color: var(--text);
+      background-color: var(--secondary);
+    color: var(--text-muted);
+
 }
 
 .nutrition-tabs a:hover {
-    background-color: var(--accent-hover);
-    color: var(--text);
-}
+    background-color: var(--secondary);
+    color: var(--text-muted);
 
-
-.nutrition-tabs a:hover {
-    background-color: var(--accent-hover);
-    color: var(--text);
 }
 
 .nutrition-tabs:has(~ .nutrition-content #supplements:target)
@@ -115,12 +119,10 @@ a[href="#calories"] {
 }
 
 .nutrition-card {
-    background-color: var(--bg-card);
-    padding: 28px;
+    background-image: linear-gradient(to bottom right, var(--bg-card), var(--bg-card), var(--secondary));
     border-radius: var(--card-radius);
-    border: 1px solid var(--divider-color);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-
+    box-shadow: 0 0 15px #76521F80;
+    padding: 28px;
     scroll-margin-top: 100px;
     transition: 0.3s;
 }
@@ -154,16 +156,8 @@ a[href="#calories"] {
     line-height: 1.6;
 }
 
-.view-all-btn {
-    color: var(--accent-text);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-}
 
-.view-all-btn:hover {
-    text-decoration: underline;
-}
+
 
 .supplement-grid {
     display: grid;
@@ -172,9 +166,9 @@ a[href="#calories"] {
 }
 
 .supplement-item {
-    background-color: var(--bg-subtle);
-    border: 1px solid var(--divider-color);
+    background-image: linear-gradient(to bottom right, var(--bg-card), var(--bg-card), var(--secondary));
     border-radius: var(--card-radius);
+    box-shadow: 0 0 15px #76521F80;
     padding: 20px 15px;
     text-align: center;
     transition: 0.3s;
@@ -283,61 +277,33 @@ a[href="#calories"] {
     margin-top: 16px;
 }
 
-#nutrition-main-view[hidden],
-#all-supplements-view[hidden] {
-    display: none;
-}
-
-.all-supplements-heading {
-    background-color: var(--bg-page);
-    text-align: center;
-    padding: 50px 20px 30px;
-}
-
-.all-supplements-heading h1 {
-    font-size: 36px;
-    color: var(--primary);
-    margin-bottom: 12px;
-}
-
-.all-supplements-heading p {
-    font-size: 15px;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-}
-
-.back-to-nutrition {
-    display: inline-block;
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 12px 24px;
-    border-radius: var(--btn-radius);
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.back-to-nutrition:hover {
-    background-color: var(--accent-text);
-}
-
-.all-supplements-container {
-    background-color: var(--bg-page);
-    padding: 20px 7% 60px;
-}
-
-.all-supplements-container .supplement-item {
-    padding: 30px 20px;
-}
-
-.all-supplements-container .supplement-image {
-    height: 180px;
-}
-
 .supplement-notice {
     color: var(--text-muted);
     font-size: 13px;
     text-align: center;
     margin-top: 25px;
+}
+
+
+@media (max-width: 1000px) {
+    .nutrition-hero {
+        background-image: linear-gradient(to top left, transparent, transparent, var(--bg-nav)),
+                          url("../images/Hero Images/hero-nutrition.png");
+        background-position: 75% center;
+    }
+
+    .nutrition-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .nutrition-hero p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    .nutrition-hero-content {
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -373,6 +339,12 @@ a[href="#calories"] {
 }
 
 @media (max-width: 450px) {
+
+     .nutrition-hero {
+        background-image: linear-gradient(to top left, transparent, transparent, var(--bg-nav)),
+                          url("../images/Hero Images/hero-nutrition.png");
+    }
+
 
     .nutrition-hero h1 {
         font-size: 28px;

@@ -15,7 +15,9 @@ body {
 .page-content {
 	flex: 1;
 }
-
+.navbar a[focus] {
+    color: var(--accent);
+}
 .navbar {
 	position: sticky;
 	top: 0;
@@ -101,23 +103,12 @@ body {
 }
 
 .footer-brand .site-name img {
-    height: 40px;
-    width: 40px;
+    width: 200px;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 
-.footer-brand .site-name p {
-    font-size: 1rem;
-    font-weight: 700;
-    color: white;
-    margin: 0;
-    letter-spacing: 1px;
-    white-space: nowrap;
-}
-
-.footer-brand .site-name span {
-    color: white;
-}
 
 .footer-brand > p {
     color: #9B9480;

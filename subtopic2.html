@@ -1,221 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition Hub | Coaching Hub</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrition Hub | Coaching Hub</title>
 
-    <link rel="stylesheet" href="css/palette.css">
-    <link rel="stylesheet" href="css/groupstrap.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/nutrition.css">
-</head>
+        <link rel="stylesheet" href="css/palette.css">
+        <link rel="stylesheet" href="css/groupstrap.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/nutrition.css">
+    </head>
 
-<body>
+    <body>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <img src="images/Brand Marks/logo.svg" alt="Coaching Hub">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <img src="images/Brand Marks/logo.svg" alt="Coaching Hub">
 
-        <input type="checkbox" name="menu-toggle"
-               id="menu-toggle" class="menu-toggle">
+            <input type="checkbox" name="menu-toggle"
+                id="menu-toggle" class="menu-toggle">
 
-        <label for="menu-toggle" class="menu-button"
-               aria-label="Toggle menu">☰</label>
+            <label for="menu-toggle" class="menu-button"
+                aria-label="Toggle menu">☰</label>
 
-        <ul class="no-bullets clean-ul">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="subtopic1.html">Hire a Coach</a></li>
-            <li><a href="subtopic2.html" aria-current="page">Nutrition</a></li>
-            <li><a href="subtopic3.html">Training</a></li>
-            <li><a href="planning-design.html">Planning</a></li>
-            <li><a href="reflection-ai-report.html">Reflection</a></li>
-            <li><a href="overview.html">Overview</a></li>
-        </ul>
-    </div>
+            <ul class="no-bullets clean-ul">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="subtopic1.html">Hire a Coach</a></li>
+                <li><a href="subtopic2.html" focus>Nutrition</a></li>
+                <li><a href="subtopic3.html">Training</a></li>
+                <li><a href="planning-design.html">Planning</a></li>
+                <li><a href="reflection-ai-report.html">Reflection</a></li>
+                <li><a href="overview.html">Overview</a></li>
+            </ul>
+        </div>
 
-    <!-- ========================================
-         NORMAL NUTRITION VIEW
-    ======================================== -->
+        <div id="nutrition-main-view">
 
-    <div id="nutrition-main-view">
+            <!-- Hero Section -->
+            <div class="nutrition-hero">
+                <div class="nutrition-hero-content">
+                    <h1>
+                        Fuel Your Body for
+                        <span>Better Results</span>
+                    </h1>
 
-        <!-- Hero Section -->
-        <div class="nutrition-hero">
-            <div class="nutrition-hero-content">
-                <h1>
-                    Fuel Your Body for
-                    <span>Better Results</span>
-                </h1>
+                    <p>
+                        Discover popular supplements, understand
+                        your BMI and calculate your daily calorie
+                        needs to support your fitness journey.
+                    </p>
 
-                <p>
-                    Discover popular supplements, understand
-                    your BMI and calculate your daily calorie
-                    needs to support your fitness journey.
-                </p>
-
-                <a href="#supplements" class="nutrition-btn">
-                    Explore Nutrition
-                </a>
+                    <a href="#supplements" class="nutrition-btn">
+                        Explore Nutrition
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- Section Navigation -->
-        <div class="nutrition-tabs">
-            <a href="#supplements">Supplements</a>
-            <a href="#bmi">BMI Calculator</a>
-            <a href="#calories">Calorie Calculator</a>
-        </div>
+            <!-- Section Navigation -->
+            <div class="nutrition-tabs">
+                <a href="#supplements">Supplements</a>
+                <a href="#bmi">BMI Calculator</a>
+                <a href="#calories">Calorie Calculator</a>
+            </div>
 
-        <!-- Main Nutrition Content -->
-        <div class="nutrition-content">
+            <!-- Main Nutrition Content -->
+            <div class="nutrition-content">
 
-            <!-- A: Popular Supplements -->
-            <section class="nutrition-card" id="supplements">
+                <!-- A: Popular Supplements -->
+                <section class="nutrition-card" id="supplements">
 
-                <div class="nutrition-card-heading">
-                    <h2>Popular Supplements</h2>
-
-                   <a href="subtopic2.html?view=all-supplements"
-                            target="_blank"
-                            rel="noopener"
-                            class="view-all-btn">
-                                View All →
-                        </a>
-                </div>
-
-                <div class="supplement-grid">
-
-                    <!-- Whey Protein -->
-                    <div class="supplement-item">
-                        <img src="images/Supplement/Supplements/whey.png"
-                             alt="Whey Protein"
-                             class="supplement-image">
-
-                        <h3>Whey Protein</h3>
-                        <p>
-                            A convenient source of protein
-                            to support muscle recovery.
-                        </p>
+                    <div class="nutrition-card-heading">
+                        <h2>Popular Supplements</h2>
                     </div>
 
-                    <!-- Creatine -->
-                    <div class="supplement-item">
-                        <img src="images/Supplement/Supplements/creatine.png"
-                             alt="Creatine"
-                             class="supplement-image">
+                    <div class="supplement-grid">
 
-                        <h3>Creatine</h3>
-                        <p>
-                            Supports strength and
-                            high-intensity performance.
-                        </p>
+                        <!-- Whey Protein -->
+                        <div class="supplement-item">
+                            <img src="images/Supplement/Supplements/whey.png"
+                                alt="Whey Protein"
+                                class="supplement-image">
+
+                            <h3>Whey Protein</h3>
+                            <p>
+                                A convenient source of protein
+                                to support muscle recovery.
+                            </p>
+                        </div>
+
+                        <!-- Creatine -->
+                        <div class="supplement-item">
+                            <img src="images/Supplement/Supplements/creatine.png"
+                                alt="Creatine"
+                                class="supplement-image">
+
+                            <h3>Creatine</h3>
+                            <p>
+                                Supports strength and
+                                high-intensity performance.
+                            </p>
+                        </div>
+
+                        <!-- Electrolytes -->
+                        <div class="supplement-item">
+                            <img src="images/Supplement/Supplements/electrolytes.png"
+                                alt="Electrolytes"
+                                class="supplement-image">
+
+                            <h3>Electrolytes</h3>
+                            <p>
+                                Helps replace important minerals
+                                lost during sweating.
+                            </p>
+                        </div>
+
+                        <!-- Omega-3 -->
+                        <div class="supplement-item">
+
+                            <img src="images/Supplement/Supplements/omega3.png"
+                                alt="Omega-3"
+                                class="supplement-image">
+
+                            <h3>Omega-3</h3>
+
+                            <p>
+                                Provides essential omega-3
+                                fatty acids.
+                            </p>
+
+                        </div>
+
+                        <!-- Vitamin D -->
+                        <div class="supplement-item">
+
+                            <img src="images/Supplement/Supplements/vitamin-d.png"
+                                alt="Vitamin D"
+                                class="supplement-image">
+
+                            <h3>Vitamin D</h3>
+
+                            <p>
+                                Helps maintain healthy bones
+                                and supports muscle function.
+                            </p>
+
+                        </div>
+
+                        <!-- Caffeine -->
+                        <div class="supplement-item">
+
+                            <img src="images/Supplement/Supplements/caffeine.png"
+                                alt="Caffeine"
+                                class="supplement-image">
+
+                            <h3>Caffeine</h3>
+
+                            <p>
+                                May improve alertness
+                                and exercise performance.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- B: BMI Calculator -->
+                <section class="nutrition-card" id="bmi">
+
+                    <div class="nutrition-card-heading">
+                        <h2>BMI Calculator</h2>
                     </div>
 
-                    <!-- Electrolytes -->
-                    <div class="supplement-item">
-                        <img src="images/Supplement/Supplements/electrolytes.png"
-                             alt="Electrolytes"
-                             class="supplement-image">
+                    <p class="section-description">
+                        Calculate your Body Mass Index using
+                        your weight and height.
+                    </p>
 
-                        <h3>Electrolytes</h3>
-                        <p>
-                            Helps replace important minerals
-                            lost during sweating.
-                        </p>
-                    </div>
+                    <div class="calculator-layout">
 
-                </div>
-            </section>
+                        <!-- BMI Inputs -->
+                        <div class="calculator-inputs">
 
-            <!-- B: BMI Calculator -->
-            <section class="nutrition-card" id="bmi">
+                            <label for="bmi-weight">
+                                Weight (kg)
+                            </label>
 
-                <div class="nutrition-card-heading">
-                    <h2>BMI Calculator</h2>
-                </div>
+                            <input type="number"
+                                id="bmi-weight"
+                                placeholder="e.g. 70"
+                                min="1" max="500"
+                                step="any">
 
-                <p class="section-description">
-                    Calculate your Body Mass Index using
-                    your weight and height.
-                </p>
+                            <label for="bmi-height">
+                                Height (cm)
+                            </label>
 
-                <div class="calculator-layout">
+                            <input type="number"
+                                id="bmi-height"
+                                placeholder="e.g. 175"
+                                min="50" max="250"
+                                step="any">
 
-                    <!-- BMI Inputs -->
-                    <div class="calculator-inputs">
-
-                        <label for="bmi-weight">
-                            Weight (kg)
-                        </label>
-
-                        <input type="number"
-                               id="bmi-weight"
-                               placeholder="e.g. 70"
-                               min="1" max="500"
-                               step="any">
-
-                        <label for="bmi-height">
-                            Height (cm)
-                        </label>
-
-                        <input type="number"
-                               id="bmi-height"
-                               placeholder="e.g. 175"
-                               min="50" max="250"
-                               step="any">
-
-                        <button type="button"
+                            <button type="button"
                                 id="calculate-bmi"
                                 class="nutrition-btn">
-                            Calculate BMI
-                        </button>
-                    </div>
-
-                    <!-- BMI Results -->
-                    <div class="calculator-results"
-                         aria-live="polite">
-
-                        <div class="result-item">
-                            <h3>Your BMI</h3>
-                            <p id="bmi-result">—</p>
+                                Calculate BMI
+                            </button>
                         </div>
 
-                        <div class="result-item">
-                            <h3>Category</h3>
-                            <p id="bmi-category">—</p>
+                        <!-- BMI Results -->
+                        <div class="calculator-results"
+                            aria-live="polite">
+
+                            <div class="result-item">
+                                <h3>Your BMI</h3>
+                                <p id="bmi-result">—</p>
+                            </div>
+
+                            <div class="result-item">
+                                <h3>Category</h3>
+                                <p id="bmi-category">—</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </div>
 
-                <p class="calculator-note">
-                    BMI is a screening measure for adults,
-                    not a medical diagnosis.
-                </p>
+                    <p class="calculator-note">
+                        BMI is a screening measure for adults,
+                        not a medical diagnosis.
+                    </p>
 
-            </section>
+                </section>
 
-            <!-- C: Daily Calorie Calculator -->
-            <section class="nutrition-card" id="calories">
+                <!-- C: Daily Calorie Calculator -->
+                <section class="nutrition-card" id="calories">
 
-                <div class="nutrition-card-heading">
-                    <h2>Daily Calorie Calculator</h2>
-                </div>
+                    <div class="nutrition-card-heading">
+                        <h2>Daily Calorie Calculator</h2>
+                    </div>
 
-                <p class= section-description">
+                    <p class= section-description">
                     Estimate your daily maintenance calories
                     using your information and activity level.
-                </p>
+                    </p>
 
-                <div class="calculator-layout">
+                    <div class="calculator-layout">
 
-                    <!-- Calorie Inputs -->
-                    <div class="calculator-inputs">
+                        <!-- Calorie Inputs -->
+                        <div class="calculator-inputs">
 
-                       
                             <label for="calorie-age">Age</label>
 
                             <input type="number"
@@ -227,271 +262,131 @@
                                 step="1"
                                 required>
 
+                            <label for="calorie-sex">Sex</label>
+                            <select id="calorie-sex">
+                                <option value="">Select Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
 
-                        <label for="calorie-sex">Sex</label>
-                        <select id="calorie-sex">
-                            <option value="">Select Sex</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                            <label for="activity-level">
+                                Activity Level
+                            </label>
 
-                        <label for="activity-level">
-                            Activity Level
-                        </label>
+                            <select id="activity-level">
+                                <option value="">Select Activity</option>
+                                <option value="1.2">Sedentary</option>
+                                <option value="1.375">Lightly Active</option>
+                                <option value="1.55">Moderately Active</option>
+                                <option value="1.725">Very Active</option>
+                                <option value="1.9">Extremely Active</option>
+                            </select>
 
-                        <select id="activity-level">
-                            <option value="">Select Activity</option>
-                            <option value="1.2">Sedentary</option>
-                            <option value="1.375">Lightly Active</option>
-                            <option value="1.55">Moderately Active</option>
-                            <option value="1.725">Very Active</option>
-                            <option value="1.9">Extremely Active</option>
-                        </select>
+                            <label for="calorie-weight">
+                                Weight (kg)
+                            </label>
 
-                        <label for="calorie-weight">
-                            Weight (kg)
-                        </label>
+                            <input type="number"
+                                id="calorie-weight"
+                                placeholder="e.g. 70"
+                                min="1" max="500"
+                                step="any">
 
-                        <input type="number"
-                               id="calorie-weight"
-                               placeholder="e.g. 70"
-                               min="1" max="500"
-                               step="any">
+                            <label for="calorie-height">
+                                Height (cm)
+                            </label>
 
-                        <label for="calorie-height">
-                            Height (cm)
-                        </label>
+                            <input type="number"
+                                id="calorie-height"
+                                placeholder="e.g. 175"
+                                min="50" max="250"
+                                step="any">
 
-                        <input type="number"
-                               id="calorie-height"
-                               placeholder="e.g. 175"
-                               min="50" max="250"
-                               step="any">
-
-                        <button type="button"
+                            <button type="button"
                                 id="calculate-calories"
                                 class="nutrition-btn">
-                            Calculate Calories
-                        </button>
+                                Calculate Calories
+                            </button>
 
-                    </div>
-
-                    <!-- Calorie Results -->
-                    <div class="calculator-results"
-                         aria-live="polite">
-
-                        <div class="result-item">
-                            <h3>Daily Calories</h3>
-                            <p id="calorie-result">—</p>
                         </div>
 
-                        <div class="result-item">
-                            <h3>Maintenance</h3>
-                            <p id="maintenance-result">—</p>
+                        <!-- Calorie Results -->
+                        <div class="calculator-results"
+                            aria-live="polite">
+
+                            <div class="result-item">
+                                <h3>Daily Calories</h3>
+                                <p id="calorie-result">—</p>
+                            </div>
+
+                            <div class="result-item">
+                                <h3>Maintenance</h3>
+                                <p id="maintenance-result">—</p>
+                            </div>
+
                         </div>
-
                     </div>
-                </div>
 
-                <p class="calculator-note">
-                    Estimates are for adults aged 18–80.
-                    Actual energy requirements vary.
-                </p>
-
-            </section>
-
-        </div>
-        <!-- End Main Nutrition Content -->
-
-    </div>
-    <!-- End Normal Nutrition View -->
-
-
-    <div id="all-supplements-view" hidden>
-
-        <!-- Supplements Heading -->
-        <div class="all-supplements-heading">
-
-            <h1>All Supplements</h1>
-
-            <p>
-                Explore popular fitness supplements
-                and learn about their uses.
-            </p>
-
-            <a href="subtopic2.html"
-               class="back-to-nutrition">
-                ← Back to Nutrition
-            </a>
-
-        </div>
-
-        <!-- All Supplement Products -->
-        <div class="all-supplements-container">
-
-            <div class="supplement-grid">
-
-                <!-- Product 1 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/whey.png"
-                         alt="Whey Protein"
-                         class="supplement-image">
-
-                    <h3>Whey Protein</h3>
-
-                    <p>
-                        A convenient source of protein
-                        that supports muscle recovery.
+                    <p class="calculator-note">
+                        Estimates are for adults aged 18–80.
+                        Actual energy requirements vary.
                     </p>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/creatine.png"
-                         alt="Creatine"
-                         class="supplement-image">
-
-                    <h3>Creatine</h3>
-
-                    <p>
-                        Supports strength and performance
-                        during high-intensity exercise.
-                    </p>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/electrolytes.png"
-                         alt="Electrolytes"
-                         class="supplement-image">
-
-                    <h3>Electrolytes</h3>
-
-                    <p>
-                        Helps replace important minerals
-                        lost during sweating.
-                    </p>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/omega3.png"
-                         alt="Omega-3"
-                         class="supplement-image">
-
-                    <h3>Omega-3</h3>
-
-                    <p>
-                        Provides essential omega-3
-                        fatty acids.
-                    </p>
-                </div>
-
-                <!-- Product 5 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/vitamin-d.png"
-                         alt="Vitamin D"
-                         class="supplement-image">
-
-                    <h3>Vitamin D</h3>
-
-                    <p>
-                        Helps maintain healthy bones
-                        and supports muscle function.
-                    </p>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="supplement-item">
-
-                    <img src="images/Supplement/Supplements/caffeine.png"
-                         alt="Caffeine"
-                         class="supplement-image">
-
-                    <h3>Caffeine</h3>
-
-                    <p>
-                        May improve alertness
-                        and exercise performance.
-                    </p>
-                </div>
+                </section>
 
             </div>
-
-            <p class="supplement-notice">
-                Supplements are not necessary for everyone.
-                Check suitability and safety before use.
-            </p>
+            <!-- End Main Nutrition Content -->
 
         </div>
-    </div>
+        <!-- Footer -->
+        <div class="footer-bg">
+            <div class="footer">
+                <div class="footer-inner">
 
-    <!-- footer -->
+                    <!-- Left: brand -->
+                    <div class="footer-brand">
+                        <div class="site-name">
+                            <img src="images/Brand Marks/logo-footer.svg" alt="logo">
+                        </div>
+                        <p>Train. Eat. Rest. Succeed.</p>
+                    </div>
 
-    <div class="footer">
-        <div class="footer-inner">
+                    <!-- Quick links + copyright -->
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
 
-            <!-- Brand -->
-            <div class="footer-brand">
-                <div class="site-name">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="subtopic1.html">Hire a Coach</a></li>
+                            <li><a href="subtopic2.html">Nutrition</a></li>
+                            <li><a href="subtopic3.html">Training</a></li>
+                            <li><a href="planning-design.html">Planning</a></li>
+                            <li><a href="reflection-ai-report.html">Reflection</a></li>
+                            <li><a href="overview.html">Overview</a></li>
+                        </ul>
 
-                    <img src="images/Brand Marks/footer-icon.svg"
-                         alt="Coaching Hub Icon">
+                        <p class="copyright">&copy; 2026 Coaching Hub. All rights reserved.</p>
+                    </div>
 
-                    <p>COACHING <span>HUB</span></p>
+                    <!-- Contact -->
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+
+                        <ul>
+                            <li>
+                                <img src="images/Icons/email.svg" alt="email">
+                                <a href="mailto:info@coachinghub.com">info@coachinghub.com</a>
+                            </li>
+
+                            <li>
+                                <img src="images/Icons/phone.svg" alt="phone">
+                                <a href="tel:+97337006846">+973 37006846</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
-
-                <p>Train. Eat. Rest. Succeed.</p>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="subtopic1.html">Hire a Coach</a></li>
-                    <li><a href="subtopic2.html">Nutrition</a></li>
-                    <li><a href="subtopic3.html">Training</a></li>
-                    <li><a href="planning-design.html">Planning</a></li>
-                    <li><a href="reflection-ai-report.html">Reflection</a></li>
-                    <li><a href="overview.html">Overview</a></li>
-                </ul>
-
-                <p class="copyright">
-                    &copy; 2026 Coaching Hub.
-                    All rights reserved.
-                </p>
-            </div>
-
-            <!-- Contact -->
-            <div class="footer-contact">
-
-                <h4>Contact</h4>
-
-                <ul>
-                    <li>
-                        <img src="images/Icons/email.svg" alt="">
-                        <a href="mailto:info@coachinghub.com">
-                            info@coachinghub.com
-                        </a>
-                    </li>
-
-                    <li>
-                        <img src="images/Icons/phone.svg" alt="">
-                        <a href="tel:+97337006846">
-                            +973 37006846
-                        </a>
-                    </li>
-                </ul>
-
             </div>
         </div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
