@@ -77,11 +77,10 @@
 }
 .guide-content > p { 
 	font-size: 0.9rem; 
-	color: var(--text-muted); 
-	margin-bottom: 15px; 
+	color: var(--text-muted);  
 }
-.guide-content details p { 
-	margin-top: 12px; 
+.guide-content  p { 
+	margin-top: 15px; 
 	font-size: .9rem; 
 	line-height: 1.7; 
 }
@@ -97,6 +96,7 @@
 	justify-content: center;
 	background: url(../images/training/training/personalized-plan.png) center / cover;
 	color: black;
+    background-repeat: no-repeat;
 }
 .bottom-banner p { 
 	font-size: 1rem; 

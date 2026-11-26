@@ -13,9 +13,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent, var(--accent)) 1;
-    background-clip: padding-box;
+	border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--accent), var(--accent-light), transparent);
+    border-image-slice: 1;
 }
 
 

@@ -20,9 +20,9 @@ body {
 
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(to right, transparent, var(--accent)) 1;
-    background-clip: padding-box;
+	border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--accent), var(--accent-light), transparent);
+    border-image-slice: 1;
 }
 
 .reflection-hero-content {
@@ -190,7 +190,7 @@ margin : 0;
 
 /* AI Tool Card Hover */
 .tool-badge:hover {
-    transform: translateY(-100px);
+    transform: translateY(-10px);
     box-shadow: 0 0 12px #76521F60;
 }
 
